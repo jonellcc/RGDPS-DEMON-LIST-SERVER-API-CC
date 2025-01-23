@@ -58,7 +58,7 @@ async function createReportPrompt(endpoint, scrapedData) {
     } else if (endpoint === '/api/demonf') {
         description = `Future Demon List of RGDPS: Highlighting upcoming and unverified levels.`;
     } else if (endpoint === '/api/challenge') {
-        description = `Challenge Demon List of RGDPS: Not-yet-verified, high-difficulty community challenges.`;
+        description = `Challenge Demon List of RGDPS: Isn't not a Demon List yet and Not-yet-verified, high-difficulty community challenges and Challenging levels for skilled players.`;
     }
 
     const prompt = `Analyze shortest response your response analyze don't more words and the following data as an AI Demon List Analyzer. ${description} Here is the data: ${promptLevels}. Provide insights into ranks and changes.`;
